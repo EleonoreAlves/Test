@@ -1,0 +1,20 @@
+@model MvcVeve.Models.Prestation
+
+@{
+    ViewData["Title"] = "Details";
+}
+<div class="bg-light">
+  <div>
+     
+  </div>
+  <div class="container" style="width: 18rem; text-align:center">
+   <h2 style="text-align:center">@Html.DisplayFor(model => model.NomPrestation)
+   </h2><br/>
+   <img class="card-img-top " style="margin-top:10px" src=../../images/@(Model.Image) alt="photo prestation"><br/>
+   <hr />
+    @Html.DisplayFor(model => model.Description)
+    <br/>
+  </div>
+ <br/>
+
+</div>
